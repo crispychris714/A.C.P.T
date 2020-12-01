@@ -1,0 +1,861 @@
+*,
+ ::after,
+ ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+header,
+main,
+footer {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* i,
+svg {
+    pointer-events: none;
+} */
+
+
+/* 
+
+----
+ Body background
+----
+
+*/
+
+.bdy-img {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.bdy-img img {
+    min-height: 2000px;
+    min-width: 100%;
+    z-index: -100;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+
+/* 
+
+---- 
+Header -+
+---- 
+
+*/
+
+#hdr-cont {
+    position: relative;
+    right: 0;
+    pointer-events: none;
+}
+
+.cmpny-slgn-logo {
+    margin-left: 3%;
+}
+
+.logo-acpt {
+    top: 10%;
+    left: 13.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(238, 236, 236);
+    font-size: 13.6px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    position: absolute;
+    opacity: 0.9;
+}
+
+.logo {
+    opacity: 0.9;
+    margin-top: 30px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.hdr-video {
+    padding: 0;
+    margin: 0;
+    bottom: 20rem;
+}
+
+.video-mp4 {
+    min-height: 100%;
+    min-width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 850px;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.cntr-con {}
+
+.cntr-con h1 {
+    font-family: 'Staatliches', cursive;
+    opacity: 0.9;
+    position: absolute;
+    font-size: 12rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 6px 12px rgb(0, 0, 0);
+    bottom: 35%;
+    left: 26%;
+    letter-spacing: 7px;
+}
+
+.cntr-con h4 {
+    font-family: 'Righteous', cursive;
+    font-size: 2.7rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    text-decoration: underline rgba(255, 255, 255, 0.664);
+    position: absolute;
+    bottom: 30%;
+    right: 16%;
+    padding-left: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.cntr-con h5 {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    position: absolute;
+    top: 64%;
+    left: 22%;
+}
+
+
+/* 
+
+---
+Side Nav
+---
+
+*/
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    color: white;
+    top: 50px;
+    right: 7%;
+    padding: 2rem 0rem;
+    z-index: 2;
+    position: absolute;
+}
+
+.nav-header>.nav-cmpny-number {
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    margin-left: -9rem;
+    padding-right: 15px;
+}
+
+.nav-header>.nav-cmpny-number>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 2rem;
+    height: 0.1rem;
+    margin: 0.4rem;
+    background: white;
+    pointer-events: none;
+}
+
+.burger {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(7, 150, 185);
+    padding: 11px 6px;
+    border-radius: 50%;
+}
+
+.nav-bar {
+    position: absolute;
+    right: 0;
+    width: 25rem;
+    height: 46.3rem;
+    background: rgba(0, 0, 0, 0.76);
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    opacity: 0;
+    padding-top: 7rem;
+    padding-right: 20px;
+}
+
+.nav-links>div {
+    padding-top: 1rem;
+}
+
+.nav-flex {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.nav-flex>h1 {
+    color: rgb(69, 210, 245);
+    font-size: 20px;
+    padding-bottom: 0.5rem;
+    pointer-events: none;
+}
+
+.nav-flex>a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 1.1rem;
+    pointer-events: none;
+}
+
+
+/* 
+
+----
+ Main
+----
+  
+*/
+
+main {
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0;
+}
+
+#flex-container {
+    display: flex;
+}
+
+.intro {
+    background-color: rgb(0, 0, 0);
+    flex: 1;
+    /* margin-left: 2%; */
+    /* margin-bottom: 15rem; */
+    box-shadow: 0 60px 60px 0 rgba(0, 0, 0, 0.2), 0 100px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.intro h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 4rem;
+    color: rgb(190, 189, 189);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+/* Slideshow container */
+
+.mySlides {
+    display: none;
+}
+
+.img-slide-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.slideshow-container>img {
+    vertical-align: middle;
+}
+
+
+/* Caption text */
+
+.img-text {
+    font-family: 'Righteous', cursive;
+    color: rgb(7, 150, 185);
+    font-size: 30px;
+    font-weight: lighter;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/8 etc) */
+
+.numbertext {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(7, 150, 185);
+}
+
+
+/* The dots/bullets/indicators */
+
+
+/* .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(69, 210, 245);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.nowActive {
+    background-color: rgb(47, 160, 189);
+} */
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.tech {
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    /* margin-left: 2%; */
+    /* margin-top: 2rem; */
+    /* margin-bottom: 5rem; */
+    padding: 1rem;
+    box-shadow: 0 60px 60px 0 rgba(0, 0, 0, 0.2), 0 100px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tech h3 {
+    color: rgb(7, 150, 185);
+    font-size: 25px;
+}
+
+.tech h3:before {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: -60px;
+    margin-right: 10px;
+    background: rgb(7, 150, 185);
+    position: relative;
+}
+
+.tech ul {
+    list-style-type: none;
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tech li {
+    /* position: absolute; */
+    visibility: hidden;
+    border-bottom: 2px solid rgba(223, 222, 222, 0.726);
+    padding: 20px;
+}
+
+.tech a {
+    text-decoration: none;
+    color: rgb(190, 189, 189);
+}
+
+.tech a:hover {
+    color: rgb(7, 150, 185);
+}
+
+.mv-rght {
+    /* aligned the list  */
+    margin-left: 10px;
+}
+
+.fa-space-shuttle,
+.fa-shield-alt,
+.fa-ship,
+.fa-oil-can,
+.fa-satellite,
+.fa-cogs,
+.fa-car {
+    font-size: 2.3rem;
+    color: rgb(7, 150, 185);
+    margin-right: 2rem;
+}
+
+.fa-arrow-circle-right {
+    float: right;
+}
+
+
+/* center main content "equipment overview"*/
+
+.brf-ovr-view {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 2rem;
+}
+
+.cmpny-prdct h3 {
+    color: rgb(7, 150, 185);
+    font-size: 23px;
+    margin-left: 43%;
+}
+
+.cmpny-prdct h3:before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 20px;
+    background: rgb(7, 150, 185);
+    position: relative;
+    margin: 0px 70px 30px 70px;
+}
+
+.cmpny-prdct h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    margin-left: 15%;
+    padding-top: 2%;
+}
+
+.cmpny-prdct h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    margin-left: 35%;
+}
+
+.cmpny-prdct p {
+    color: rgb(175, 174, 174);
+    font-size: 1.3rem;
+}
+
+.p1 {
+    margin-left: 15%;
+    padding-top: 20px;
+}
+
+.p2 {
+    margin-left: 20%;
+}
+
+.p3 {
+    margin-left: 33%;
+}
+
+.cmpny-prdct h4 {
+    margin-left: 46.5%;
+    color: rgb(7, 150, 185);
+    padding-top: 20px;
+    font-size: 1.3rem;
+}
+
+
+/* equipment images */
+
+.img-flex-cntr {
+    padding-top: 50px;
+}
+
+.img-flex-cntr-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-flex-cntr-column {
+    position: relative;
+    margin: 0px 40px;
+    padding: 0px 20px;
+}
+
+.img-flex-cntr-column>h5 {
+    color: rgb(7, 150, 185);
+    font-size: 1.4rem;
+    padding-top: 10px;
+}
+
+.img-flex-cntr-column p {
+    font-size: medium;
+    position: relative;
+}
+
+.img-flex-cntr-column:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/* equipment button */
+
+.btn-equip {
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+}
+
+.btn-equip a {
+    color: rgb(7, 150, 185);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1px solid rgb(7, 150, 185);
+    border-radius: 20px;
+    padding: 7px 20px;
+    letter-spacing: 1px;
+}
+
+.btn-equip a:hover {
+    color: white;
+    background-color: rgb(7, 150, 185);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* center blueprints/winding images */
+
+.long-bio {
+    display: flex;
+}
+
+.staff {
+    flex: 50%;
+    position: relative;
+}
+
+.staff h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 5rem;
+    font-weight: 100;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 23%;
+    left: 35.5%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.staff p {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    margin-right: -15rem;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 253, 253);
+    font-size: 1.3rem;
+    font-weight: bold;
+    pointer-events: none;
+    text-shadow: 2px 2px 5px black;
+}
+
+.img-staff {
+    flex: 45%;
+}
+
+
+/* NEWS and carousel */
+
+.news-slide {
+    position: relative;
+    align-items: center;
+    display: flex;
+    min-height: 100%;
+    padding: 0;
+}
+
+.news-slide h2 {
+    margin-left: 45%;
+    font-family: 'Staatliches', cursive;
+    font-size: 6rem;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+}
+
+.news-slide h2:before {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 40px;
+    background: rgb(7, 150, 185);
+    position: relative;
+    margin: 0px 60px 5px 50px;
+}
+
+.news-slide h1 {
+    color: rgb(7, 150, 185);
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 0 .1em;
+}
+
+.news-slide p {
+    color: rgb(175, 174, 174);
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.news-btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border: 1px solid rgb(7, 150, 185);
+    border-radius: 20px;
+    color: rgb(7, 150, 185);
+}
+
+.news-btn-move {
+    margin-bottom: 30px;
+}
+
+.news-btn:hover {
+    color: white;
+    background-color: rgb(7, 150, 185);
+}
+
+.carousel {
+    justify-content: flex-start;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    position: relative;
+    width: 100vw;
+    background: url(../img/news-bckground.jpg) no-repeat;
+    background-size: cover;
+}
+
+.carousel>.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    transition: transform 600ms;
+}
+
+.carousel>nav {
+    bottom: 5%;
+    left: 0.5%;
+    position: absolute;
+    text-align: center;
+    width: 99vw;
+    z-index: 1;
+}
+
+.carousel>nav a {
+    color: rgb(7, 150, 185);
+    font-size: 30px;
+    opacity: .4;
+    text-decoration: none;
+}
+
+.carousel>nav a:hover {
+    opacity: .5;
+}
+
+.carousel>nav a.current {
+    opacity: 1;
+}
+
+.carousel .slide {
+    flex-shrink: 0;
+    line-height: 1.4;
+    text-align: center;
+    width: 100vw;
+}
+
+
+/* 
+
+----
+ Footer Content
+----
+
+*/
+
+footer {
+    margin-top: 0;
+    padding: 0;
+}
+
+.footer-cont {
+    padding-top: 110px;
+    padding-bottom: 11px;
+    position: relative;
+    background: rgb(221, 220, 220);
+}
+
+.arrow-end-nav {
+    position: absolute;
+    /*Needs to be Absolute Positioned to the parent relative div*/
+    top: -1%;
+    /*50% from the top*/
+    left: 50%;
+    transform: translate(0, -50%);
+    /*Moves position of element*/
+    text-align: center;
+    /*Aligns icon in center vertically*/
+    width: 1px;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-toTop {
+    padding: 7px 15px 7px 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    background: rgb(7, 150, 185);
+    color: rgb(255, 255, 255);
+}
+
+.arrow-toTop:hover {
+    transform: translateY(8px);
+    transition: 0.5s ease-out;
+    background: rgb(7, 150, 185);
+    box-shadow: 0 40px 60px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cp-rights {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(158, 155, 155);
+    font-weight: 800;
+    padding: 0;
+}
+
+.end-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px;
+    font-family: sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+}
+
+.nv-list {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.nv-list p {
+    font-size: 1.5rem;
+    color: rgb(7, 150, 185);
+}
+
+.nv-list ul {
+    color: rgb(158, 155, 155);
+    list-style-type: none;
+}
+
+.nv-list li {
+    font-size: 19px;
+}
+
+.loc-map {}
+
+.loc-map ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+.loc-map a {
+    text-decoration: none;
+    color: rgb(158, 155, 155);
+    margin-right: 20px;
+}
+
+.loc-map a:hover {
+    color: rgb(121, 119, 119);
+}
+
+.maps ul {
+    list-style-type: none;
+}
