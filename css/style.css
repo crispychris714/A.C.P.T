@@ -3,6 +3,7 @@
  ::before {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: inherit;
 }
 
@@ -11,15 +12,9 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    border: 0;
     overflow-x: hidden;
-    background-color: rgb(0, 0, 0);
-}
-
-header,
-main,
-footer {
-    padding: 0;
-    margin: 0;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -63,6 +58,9 @@ Header -+
     position: relative;
     right: 0;
     pointer-events: none;
+    margin: -10px;
+    padding: 0;
+    border: 0;
 }
 
 .cmpny-slgn-logo {
@@ -151,6 +149,12 @@ Side Nav
 ---
 
 */
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 .nav-header {
     display: flex;
@@ -247,9 +251,9 @@ Side Nav
 main {
     width: 100%;
     position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding: 0;
+    border: 0;
 }
 
 section {
@@ -319,7 +323,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(7, 150, 185);
+    background-color: rgba(7, 149, 185, 0.589);
 }
 
 
@@ -590,6 +594,9 @@ section {
 
 .long-bio {
     display: flex;
+    margin: -10px;
+    padding: 0px;
+    border: 0px;
 }
 
 .staff {
@@ -635,6 +642,7 @@ section {
     display: flex;
     min-height: 100%;
     padding: 0;
+    margin: 0;
 }
 
 .news-slide h2 {
@@ -712,7 +720,7 @@ section {
 
 .carousel>nav {
     bottom: 5%;
-    left: 0.5%;
+    left: 0.1%;
     position: absolute;
     text-align: center;
     width: 99vw;
@@ -751,11 +759,12 @@ section {
 */
 
 footer {
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 }
 
 .footer-cont {
+    margin: 0;
     padding-top: 110px;
     padding-bottom: 11px;
     position: relative;

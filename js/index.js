@@ -74,7 +74,7 @@ function listStagger() {
         let listTl = gsap.timeline();
 
         listTl = new TimelineMax({ repeat: 0 }); //do not repeat staggering effect
-        listTl.staggerTo(nxtList, 0.5, { autoAlpha: 1 }, 0.3); //stagger for 0.3 seconds
+        listTl.staggerTo(nxtList, 0.5, { autoAlpha: 1 }, 0.2); //stagger for 0.3 seconds
 
         //Creating a scene using scroll magic
         listScene = new ScrollMagic.Scene({
