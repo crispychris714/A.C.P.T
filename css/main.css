@@ -204,7 +204,7 @@ Side Nav
     position: absolute;
     right: 0;
     width: 25rem;
-    height: 46.3rem;
+    height: 45.6rem;
     background: rgba(0, 0, 0, 0.76);
     align-items: flex-end;
     display: flex;
@@ -213,6 +213,11 @@ Side Nav
     opacity: 0;
     padding-top: 7rem;
     padding-right: 20px;
+}
+
+.nav-bar>.nav-links>div>a:hover {
+    color: rgb(69, 210, 245);
+    transform: translateX(-10px);
 }
 
 .nav-links>div {

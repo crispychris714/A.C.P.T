@@ -83,11 +83,6 @@ function listStagger() {
                 reverse: false,
             })
             .setTween(listTl)
-            .addIndicators({
-                colorStart: "blue",
-                colorTrigger: "red",
-                name: "stag",
-            })
             .addTo(controller);
 
     });
