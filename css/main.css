@@ -849,6 +849,16 @@ footer {
 
 .nv-list li {
     font-size: 19px;
+    cursor: pointer;
+}
+
+.nv-list li>a {
+    text-decoration: none;
+    color: rgb(158, 155, 155);
+}
+
+.nv-list li>a:hover {
+    color: rgb(121, 119, 119);
 }
 
 .loc-map {}
