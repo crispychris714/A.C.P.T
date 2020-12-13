@@ -17,6 +17,10 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+@-ms-viewport {
+    width: device-width;
+}
+
 
 /* i,
 svg {
@@ -100,7 +104,7 @@ Header -+
     left: 0;
     top: 0;
     width: auto;
-    height: 850px;
+    height: 600px;
     z-index: -1;
     object-fit: cover;
 }
@@ -267,6 +271,7 @@ section {
 
 #flex-container {
     display: flex;
+    height: 550px;
 }
 
 .intro {
@@ -303,51 +308,6 @@ section {
 .slideshow-container>img {
     vertical-align: middle;
 }
-
-
-/* Caption text */
-
-.img-text {
-    font-family: 'Righteous', cursive;
-    color: rgb(7, 150, 185);
-    font-size: 30px;
-    font-weight: lighter;
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
-}
-
-
-/* Number text (1/8 etc) */
-
-.numbertext {
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(7, 149, 185, 0.589);
-}
-
-
-/* The dots/bullets/indicators */
-
-
-/* .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(69, 210, 245);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.nowActive {
-    background-color: rgb(47, 160, 189);
-} */
 
 
 /* Fading animation */
@@ -391,8 +351,7 @@ section {
     flex: 1;
     /* margin-left: 2%; */
     /* margin-top: 2rem; */
-    /* margin-bottom: 5rem; */
-    padding: 1rem;
+    padding: 10px;
     box-shadow: 0 60px 60px 0 rgba(0, 0, 0, 0.2), 0 100px 100px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -416,7 +375,7 @@ section {
 .tech ul {
     list-style-type: none;
     font-family: 'Staatliches', cursive;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -424,10 +383,11 @@ section {
 }
 
 .tech li {
+    font-size: 2rem;
     /* position: absolute; */
     visibility: hidden;
     border-bottom: 2px solid rgba(223, 222, 222, 0.726);
-    padding: 20px;
+    padding: 13px;
 }
 
 .tech a {

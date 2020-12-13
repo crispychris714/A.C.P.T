@@ -37,7 +37,7 @@ function navToggle(e) {
 
 burger.addEventListener("click", navToggle);
 
-// Slideshow Animation
+// Products Slideshow Animation
 let slideIndex = 0;
 
 function showSlides() {
@@ -79,7 +79,7 @@ function listStagger() {
         //Creating a scene using scroll magic
         listScene = new ScrollMagic.Scene({
                 triggerElement: stag,
-                triggerHook: 0.8,
+                triggerHook: 0.5,
                 reverse: false,
             })
             .setTween(listTl)
